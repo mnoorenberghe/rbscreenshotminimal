@@ -17,6 +17,8 @@ RBScreenshotMinimal.Extension = RB.Extension.extend({
 
                 RB.DraftReviewBannerView.prototype.hideAndReload = function() {
                     // not going back to reviewURL
+                    // TODO: have to reload the current page or we get an alert with an error. Try clear state instead.
+                    window.location.reload();
                 };
             }
         });
